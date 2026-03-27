@@ -1,0 +1,264 @@
+/* ---------- GLOBAL ---------- */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* ---------- HEADER ---------- */
+
+.site-header {
+  background-color: #222;
+  color: white;
+  padding: 1.5em 2em;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.logoDiv {
+  margin-bottom: 0.5em;
+}
+
+.centered-img {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  height: auto;
+}
+
+.site-title {
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 0;
+  margin: 1.2em 0 0;
+}
+
+.main-nav a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.25s ease;
+}
+
+.main-nav a:hover {
+  color: white;
+  background-color: #444;
+}
+
+.main-nav a.active {
+  background-color: #6366f1;
+  color: white;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section {
+  background: white;
+  padding: 40px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  font-size: 1.7rem;
+}
+
+/* ---------- INTRO ---------- */
+
+.intro {
+  text-align: center;
+}
+
+/* ---------- GALLERY TABLE ---------- */
+
+.artist-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.artist-table th {
+  background-color: #e8e8e8;
+  padding: 14px;
+  text-align: left;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+}
+
+.artist-table td {
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.table-link {
+  color: #6366f1;
+  font-weight: bold;
+}
+
+.table-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- LOGO IMAGES ---------- */
+
+.logoImg {
+  width: 120px;
+  height: auto;
+  background-color: black;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.logoImg.artfinder {
+  width: 160px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* ---------- SELL YOUR ART ---------- */
+
+.steps-list {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.steps-list li {
+  margin-bottom: 10px;
+}
+
+/* ---------- RATINGS ---------- */
+
+.placeholder-box {
+  padding: 20px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  text-align: center;
+  color: #666;
+  border: 1px dashed #bbb;
+}
+
+/* ---------- CONTACT FORM ---------- */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-family: inherit;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.status-message {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.btn-primary {
+  padding: 10px 16px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4f46e5;
+}
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 2em 1em;
+  margin-top: 50px;
+}
+
+.subscribe-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.subscribe input[type="email"] {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  width: 250px;
+  transition: 0.25s ease;
+}
+
+.subscribe input[type="email"]:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 700px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0.7em;
+  }
+
+  .centered-img {
+    width: 100px;
+  }
+
+  .logoImg {
+    width: 90px;
+  }
+}
